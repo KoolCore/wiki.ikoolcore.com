@@ -37,8 +37,9 @@ export default ({ mode }: any) => {
       port: DOC_DEV_PORT,
     },
     build: {
-      emptyOutDir: true,
+      emptyOutDir: false,
       chunkSizeWarningLimit: 500,
+      outDir: './docs',
       rollupOptions: {
         output: {
           chunkFileNames: 'assets/[name]-[hash].js',
