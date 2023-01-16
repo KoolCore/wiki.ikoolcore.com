@@ -1,1 +1,0 @@
-@keyframes l-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.l-icon{display:inline-block;vertical-align:middle;width:1em;height:1em}.l-icon:before{font-family:unset}.l-icon-loading{animation:l-spin 1s linear infinite}.l-icon{fill:currentColor}.l-icon.l-size-s,i.l-size-s{font-size:14px}.l-icon.l-size-m,i.l-size-m{font-size:16px}.l-icon.l-size-l,i.l-size-l{font-size:18px}
