@@ -1,0 +1,1 @@
+import{u as e,j as o,o as s,k as a}from"./vendor-909dccda.js";import"./__commonjsHelpers__-725317a4.js";const c={class:"markdown-body"},n=a("p",{class:"notice"},"待收集。",-1),r=[n],l=[],f={__name:"question",setup(_,{expose:t}){return t({frontmatter:{meta:[]}}),e({meta:[]}),(i,p)=>(s(),o("div",c,r))}};export{f as default,l as meta};
