@@ -1,1 +1,1 @@
-https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane
+wiki.ikoolcore.com
