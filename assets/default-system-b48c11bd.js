@@ -1,0 +1,1 @@
+import{A as e,f as s,e as a,g as o}from"./vendor-a7b6b0c4.js";import"./__commonjsHelpers__-725317a4.js";const c={class:"markdown-body"},n=o("p",{class:"notice"},"硬酷R2不预装任何系统，不提供任何固件、镜像、教程等，硬件质量之外的服务。",-1),r=[n],h=[],u={__name:"default-system",setup(_,{expose:t}){return t({frontmatter:{meta:[]}}),e({meta:[]}),(i,p)=>(a(),s("div",c,r))}};export{u as default,h as meta};
