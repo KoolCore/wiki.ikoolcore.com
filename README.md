@@ -1,1 +1,2 @@
-wiki.ikoolcore.com
+wiki.ikoolcore.com 
+
