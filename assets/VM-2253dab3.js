@@ -1,0 +1,1 @@
+import{A as o,f as s,g as a,h as t}from"./vendor-a71afa14.js";import"./__commonjsHelpers__-725317a4.js";const n={class:"markdown-body"},r=t("p",null,[t("strong",null,"內容待完善…")],-1),c=[r],u=[],f={__name:"VM",setup(_,{expose:e}){return e({frontmatter:{meta:[]}}),o({meta:[]}),(l,p)=>(s(),a("div",n,c))}};export{f as default,u as meta};
