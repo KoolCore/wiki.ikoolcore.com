@@ -1,1 +1,7 @@
-![Banner_20240904.webp](https://s2.loli.net/2024/09/25/BLVWieJ89lpbDo2.webp)
+![Banner_20240904.webp](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/PCIeAllocationEn.png)
+
+![](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/vmware-dashborad-en.png)
+
+![](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/vmware-pci-passth.png)
+
+![](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/%E5%85%AD%E8%A7%86%E5%9B%BE.webp)
