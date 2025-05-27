@@ -5,12 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="description" content="Explore Your iKOOLCORE Products on wiki Site" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iKOOLCORE 官方Wiki | 硬酷科技Wiki |   硬酷R2 Max wiki | 硬酷R2 wiki |  硬酷R1 Pro wiki</title>
-    <!-- Google Fonts -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
+    <title>iKOOLCORE 官方Wiki | 硬酷科技Wiki | 硬酷R2 Max wiki | 硬酷R2 wiki | 硬酷R1 Pro wiki</title>
+    
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- 添加 logo 样式 -->
+    
+    <!-- Critical CSS -->
     <style>
       .header-logo {
         position: absolute;
@@ -20,23 +27,26 @@
         max-width: 200px;
       }
     </style>
-    <script type="module" crossorigin src="./assets/index-e3a24f36.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/__commonjsHelpers__-725317a4.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-4dc75e16.js">
+    <script type="module" crossorigin src="./assets/index-9ce20520.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/__commonjsHelpers__-02d3be64.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-9836eb8f.js">
     <link rel="stylesheet" href="./assets/vendor-94a5fc92.css">
-    <link rel="stylesheet" href="./assets/index-eda19d87.css">
+    <link rel="stylesheet" href="./assets/index-e85082cf.css">
   </head>
   <body>
     <div id="app"></div>
     
-    <!-- Google tag (gtag.js) -->
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ52RSW7T4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-PZ52RSW7T4');
+      gtag('config', 'G-PZ52RSW7T4', {
+        'anonymize_ip': true,
+        'cookie_expires': 365 * 24 * 60 * 60
+      });
     </script>
   </body>
 </html>
