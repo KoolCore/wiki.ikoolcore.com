@@ -1,5 +1,3 @@
-![Banner_20240904.webp](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/PCIeAllocationEn.png)
-
 ![](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/vmware-dashborad-en.png)
 
 ![](https://jackeroo-org-1257348434.cos.ap-hongkong.myqcloud.com/vmware-pci-passth.png)

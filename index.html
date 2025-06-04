@@ -26,16 +26,84 @@
         width: 75%;
         max-width: 200px;
       }
+
+      /* Loading indicator */
+      #app:empty::before {
+        content: '';
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+
+      /* Error message */
+      .error-message {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        z-index: 1000;
+      }
+
+      .error-message.visible {
+        display: block;
+      }
     </style>
-    <script type="module" crossorigin src="./assets/index-a4fc370a.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/__commonjsHelpers__-02d3be64.js">
-    <link rel="modulepreload" crossorigin href="./assets/vendor-9836eb8f.js">
-    <link rel="stylesheet" href="./assets/vendor-94a5fc92.css">
-    <link rel="stylesheet" href="./assets/index-ed7a9ca1.css">
+    <script type="module" crossorigin src="./assets/index-410e53ac.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/vue-vendor-9648cc25.js">
+    <link rel="modulepreload" crossorigin href="./assets/ldesign-vendor-87c57c10.js">
+    <link rel="modulepreload" crossorigin href="./assets/markdown-vendor-49f2b9c7.js">
+    <link rel="stylesheet" href="./assets/ldesign-vendor-94a5fc92.css">
+    <link rel="stylesheet" href="./assets/index-ef3388cb.css">
   </head>
   <body>
     <div id="app"></div>
+    <div id="error-message" class="error-message">
+      <h2>加载出错</h2>
+      <p id="error-details"></p>
+      <button onclick="window.location.reload()">重试</button>
+    </div>
     
+    
+    <!-- Error handling -->
+    <script>
+      window.addEventListener('error', function(event) {
+        console.error('Global error:', event);
+        const errorMessage = document.getElementById('error-message');
+        const errorDetails = document.getElementById('error-details');
+        if (errorMessage && errorDetails) {
+          errorDetails.textContent = `Type: ${event.type}\nMessage: ${event.message || event.error?.message || '未知错误'}\nURL: ${event.filename}\nLine: ${event.lineno}\nColumn: ${event.colno}\nError Object: ${event.error ? JSON.stringify(event.error, Object.getOwnPropertyNames(event.error)) : 'N/A'}`;
+          errorMessage.classList.add('visible');
+        }
+      });
+
+      window.addEventListener('unhandledrejection', function(event) {
+        console.error('Unhandled promise rejection:', event);
+        const errorMessage = document.getElementById('error-message');
+        const errorDetails = document.getElementById('error-details');
+        if (errorMessage && errorDetails) {
+          errorDetails.textContent = `Type: unhandledrejection\nReason: ${event.reason?.message || JSON.stringify(event.reason) || '未知错误'}`;
+          errorMessage.classList.add('visible');
+        }
+      });
+    </script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ52RSW7T4"></script>
