@@ -22,7 +22,7 @@
 
    ![Select the target drive](https://s2.loli.net/2023/03/18/6yqnoLZBXGewJdm.png)
 
-2. Select the firmware image and the inserted drive, then click **Write**.
+2. Select the firmware image and the inserted drive, then click**Write**.
 
    ![Select the firmware](https://s2.loli.net/2023/03/18/nBIcqLZhgmFDe6o.png)
 
@@ -40,4 +40,4 @@ Install the prepared drive into the iKOOLCORE device, connect power and a monito
 
 ### How do I expand the Overlay partition for OpenWRT?
 
-> Most available guides describe expanding partitions on SATA drives. For NVMe or eMMC drives, most modern firmware includes a **Disk Management** feature. You can change the partition size and format from the web interface under **System** → **Disk Management**. If the partition cannot be changed to `f2fs`, use command-line tools to format it with the required file system.
+> Most available guides describe expanding partitions on SATA drives. For NVMe or eMMC drives, most modern firmware includes a**Disk Management**feature. You can change the partition size and format from the web interface under**System**→**Disk Management**. If the partition cannot be changed to `f2fs`, use command-line tools to format it with the required file system.

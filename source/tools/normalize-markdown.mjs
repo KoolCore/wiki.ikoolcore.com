@@ -75,7 +75,7 @@ function convertInlineHtml(markdown) {
 
 function convertHtmlBlocks(markdown) {
   const turndown = createTurndown()
-  return markdown.replace(/<(table|div|section|details|video|iframe)\b[\s\S]*?<\/\1>/gi, (block) => {
+  return markdown.replace(/<(table|div|section|details|video|iframe|ul|ol|blockquote)\b[\s\S]*?<\/\1>/gi, (block) => {
     return '\n\n' + turndown.turndown(block).trim() + '\n\n'
   })
 }
