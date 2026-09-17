@@ -65,13 +65,15 @@ R2 Max目前已经优化处理器资源的划分，黑色主板（v1.1）的硬�
 
 R2 Max兼容Windows, Debian, Ubuntu, CentOS, Proxmox VE, VMware ESXi, OpenWRT, iKuai（爱快）等主流系统。
 
--**VMware ESXi**> VMware下 AQC113C-B1-C 网卡无法作为管理口（安装后无法识别到），但该网卡可以在 ESXi下完美识别到网卡并可直通给虚拟机使用。
+- **VMware ESXi**
+
+  > VMware下 AQC113C-B1-C 网卡无法作为管理口（安装后无法识别到），但该网卡可以在 ESXi下完美识别到网卡并可直通给虚拟机使用。
 
 ![VMware-dashboard.webp?v=1748364020](https://cdn.shopify.com/s/files/1/0696/1555/0751/files/VMware-dashboard.webp?v=1748364020)
 
 ![vmware-pci-device.webp?v=1748364020](https://cdn.shopify.com/s/files/1/0696/1555/0751/files/vmware-pci-device.webp?v=1748364020)
 
--**Proxmox VE:**> 大家熟悉的PVE虚拟机，其底层是Debian系统，开源方案。R2
+- **Proxmox VE:**> 大家熟悉的PVE虚拟机，其底层是Debian系统，开源方案。R2
 
 > Max完美兼容 PVE，各硬件完美识别并可直接使用。
 
@@ -79,7 +81,7 @@ R2 Max兼容Windows, Debian, Ubuntu, CentOS, Proxmox VE, VMware ESXi, OpenWRT, i
 
 ![PVE-1.webp?v=1748364900](https://cdn.shopify.com/s/files/1/0696/1555/0751/files/PVE-1.webp?v=1748364900)
 
--**OpenWRT:**> 可物理机直接安装，也可通过 VMware
+- **OpenWRT:**> 可物理机直接安装，也可通过 VMware
 
 > ESXi 或 PVE 虚拟机安装，将两个万兆网卡直通给 OpenWRT 即可完美使用。
 
@@ -88,7 +90,9 @@ R2 Max兼容Windows, Debian, Ubuntu, CentOS, Proxmox VE, VMware ESXi, OpenWRT, i
 
 ![openwrt_e131972a-b2e7-443c-a2e3-5fbac2cb9b1f.webp?v=1748364021](https://cdn.shopify.com/s/files/1/0696/1555/0751/files/openwrt_e131972a-b2e7-443c-a2e3-5fbac2cb9b1f.webp?v=1748364021)
 
--**Windows:**![windows.webp?v=1748364020](https://cdn.shopify.com/s/files/1/0696/1555/0751/files/windows.webp?v=1748364020)
+- **Windows:**
+
+![windows.webp?v=1748364020](https://cdn.shopify.com/s/files/1/0696/1555/0751/files/windows.webp?v=1748364020)
 
 ## 六、内存兼容性测试
 
@@ -155,7 +159,6 @@ MAC Temperature: +42.0°C
 temp1: +27.8°C
 PHY Temperature: +45.0°C
 MAC Temperature: +45.0°C
-
 ```
 
 问：售后和质保政策如何？
