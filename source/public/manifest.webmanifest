@@ -1,0 +1,17 @@
+{
+  "name": "iKOOLCORE 官方知识库",
+  "short_name": "iKOOLCORE Wiki",
+  "description": "iKOOLCORE 产品文档、BIOS 更新、驱动下载与技术支持。",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f7fb",
+  "theme_color": "#0877ff",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
