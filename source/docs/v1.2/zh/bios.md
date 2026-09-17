@@ -1,27 +1,23 @@
-# 常见设置
+# BIOS 常见设置
 
-## 常见设置
+## 基础操作
 
-| 型号 | R2
+| 项目             | R2                                 | R2 Max                             |
+| ---------------- | ---------------------------------- | ---------------------------------- |
+| 进入 BIOS 快捷键 | `F2`                               | `Esc` 或 `F2`                      |
+| 启动顺序快捷键   | `F12`                              | `F11`                              |
+| 恢复默认出厂设置 | `Save & Exit` → `Restore Defaults` | `Save & Exit` → `Restore Defaults` |
 
-|
+## 电源与唤醒设置
 
-R2Max
+| 设置项         | R2                                                                                                        | R2 Max                                                                 |
+| -------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 来电启动       | `Chipset` → `PCH-IO Configuration` → `State After G3`；来电自启选择 `S0 State`，手动开关机选择 `S5 State` | `Advanced` → `IT8613 Super IO Configuration` → `Restore AC Power Loss` |
+| USB 口带电     | `Chipset` → `USB 5V Configuration` → `USB 5V ALWAY`                                                       | `Advanced` → `IT8613 Super IO Configuration` → `USB Power CTL`         |
+| 网口带电与 WOL | `Chipset` → `PCIE LAN Configuration` → `Wake on LAN Enable`                                               | `Advanced` → `ACPI Settings` → `Wake by onboard LAN`                   |
 
-| | | | | --- | --- | --- 进入BIOS快捷键 |
+## 风扇设置
 
-`F2`
-
-|
-
-`ESC`或`F2`
-
-| | | | | 来电启动设置 | `Chipset`\->`PCH-IO Configuration`\->`State After G3` 来电自启：`S0 State`  手动开关机：`S5 State` | `Advanced`\->`IT8613 Super IO Configuration`\-> `Restore AC Power Loss` 启动顺序快捷键 |
-
-`F12`
-
-|
-
-`F11`
-
-| | | | | PWM风扇设置 | `Advanced`\->`Hardware Monitor`\->`Smart Fan Function`\->`CPU Fan Configuration` PWM模式：`Normal Mode`  手动模式：`Manual Mode` 全速模式：`Ful l on Mode` | `Advanced`\->`Hardware Monitor` PWM模式：`PWM Mode` 全速模式：`Full on Speed` 风扇停转模式：`Fan Off Mode` | | USB口带电设置 | `Chipset`\-> `USB 5V Configuration`\->`USB 5V ALWAY` | `Advanced`\->`IT8613 Super IO Configuration`\-> `USB Power CTL` | | 网口口带电设置与WOL | `Chipset`\-> `PCIE LAN Configuration`\->`Wake on LAN Enable` | `Advanced`\->`ACPI Settings`\->`Wake by onboard LAN` | | 恢复默认出厂BIOS设置 | `Save & Exit` -> `Restore Defaults` | `Save & Exit` -> `Restore Defaults` |
+| 设置项   | R2                                                                                                                                  | R2 Max                                                                            |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| PWM 风扇 | `Advanced` → `Hardware Monitor` → `Smart Fan Function` → `CPU Fan Configuration`；可选 `Normal Mode`、`Manual Mode`、`Full on Mode` | `Advanced` → `Hardware Monitor`；支持 `PWM Mode`、`Full on Speed`、`Fan Off Mode` |
