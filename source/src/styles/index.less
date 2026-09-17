@@ -499,7 +499,7 @@ input:focus-visible {
   max-width: none;
   min-height: 100vh;
   margin: calc(var(--ik-header-height) + 30px) 0 0 var(--ik-sidebar-width);
-  padding: 0 clamp(22px, 3.2vw, 54px) 90px;
+  padding: 0 max(clamp(22px, 3.2vw, 54px), 42px) 90px;
 }
 
 .page-hero {
@@ -649,7 +649,7 @@ input:focus-visible {
 
 .content-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 240px);
   gap: 24px 30px;
   align-items: start;
   margin-top: 18px;
@@ -660,6 +660,8 @@ input:focus-visible {
 }
 
 .page-rail {
+  width: 100%;
+  padding-right: 4px;
   position: sticky;
   top: calc(var(--ik-header-height) + 24px);
   display: grid;
@@ -704,7 +706,7 @@ input:focus-visible {
   display: block;
   width: 100%;
   padding: 7px 8px 7px 15px;
-  overflow: hidden;
+  overflow: visible;
   color: var(--ik-muted);
   background: transparent;
   border: 0;
@@ -712,8 +714,9 @@ input:focus-visible {
   font-size: 11px;
   line-height: 1.45;
   text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .rail-card button::before {
@@ -769,6 +772,7 @@ input:focus-visible {
   color: #aec9e5;
   font-size: 11px;
   line-height: 1.65;
+  overflow-wrap: anywhere;
 }
 
 .support-card a {
@@ -1193,6 +1197,17 @@ input:focus-visible {
 
 :root[data-theme="dark"] .nav-link.active {
   background: linear-gradient(90deg, #102e4e, #0c2036);
+}
+
+@media (max-width: 1280px) {
+  .wiki-main {
+    padding-right: 44px;
+  }
+
+  .content-layout {
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 1120px) {
